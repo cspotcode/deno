@@ -121,7 +121,6 @@ impl MainWorker {
         options.broadcast_channel.clone(),
         options.unstable,
       ),
-      deno_webgpu::init(options.unstable),
       deno_timers::init::<Permissions>(),
       // ffi
       deno_ffi::init::<Permissions>(options.unstable),
